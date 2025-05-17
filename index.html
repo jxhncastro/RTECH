@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTECH</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="w-75 py-5 mx-auto">
+    
+    <h2 class="bg-light">RTECH IT Services & Gadgets Repair </h2>
+    <label for="name">mobileName</label>
+    <input class="mb-3 form-control" type="text" name="" id="name" oninput="validation()">
+    <p class="bg-light d-none warrning" id="warrning">the text must have 3 letters at lest</p>
+
+    <label for="price">mobilePrice</label>
+    <input class="mb-3 form-control" type="text" id="price">
+
+    <label for="category">mobileCategory</label>
+    <input class="mb-3 form-control" type="text" id="category">
+
+    <label for="decsreption">mobileDecsreption</label>
+    <textarea name="" id="decsreption" class="mb-3 form-control"></textarea>
+
+    <button class="btn btn-primary" onclick="addProduct()" id="addBtn">Add Product</button>
+    <button class="btn btn-primary d-none" onclick="update()" id="updateBtn" >update Product</button>
+
+    <input type="search" oninput="search()" id="searchInput" class="w-50 mx-auto btn-outline-info btn">
+</div>
+
+ <table class="w-75 table mx-auto py-3 text-center">
+ <thead>
+     <th>Index</th>
+    <th>productName</th>
+    <th>productPrice</th>
+    <th>productCategory</th>
+    <th>productDescription</th>
+    <th>Update</th>
+    <th>Delete</th>
+ </thead>
+ <tbody id="tbody">
+
+
+ </tbody>
+ </table>
+
+    <!-- <label for="replacement">replacement</label>
+    <input class="mb-3 form-control" type="text" id="replacement">
+    <button onclick="replacement()" class="btn btn-danger btn-sm">Update</button> -->
+
+
+
+    
+    <script src="./js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
